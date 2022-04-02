@@ -1,0 +1,266 @@
+.container {
+  background-color: hsl(229, 57%, 11%);
+  height: 100vh;
+  position: relative;
+}
+
+.card {
+  height: 50vh;
+  background-image: url('../assets/bg-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.icon-card {
+  background-color: hsl(228, 56%, 26%);
+  padding-left: 40px;
+  width: 17%;
+  height: 23vh;
+  position: absolute;
+  left: 25%;
+  bottom: 74%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 40%;
+}
+
+.logo {
+  width: 40%;
+  margin-top: 50px;
+}
+
+.icons {
+  margin-top: 20px;
+  width: 70%;
+}
+
+.document-icon,
+.folder-icon,
+.upload-icon {
+  padding: 10px;
+  height: 22px;
+  width: 12%;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.document-icon,
+.folder-icon {
+  margin-right: 25px;
+}
+
+.progress-card {
+  background-color: hsl(228, 56%, 26%);
+  width: 33%;
+  height: 12vh;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  left: 47%;
+  bottom: 74%;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress-card h3 {
+  width: 84%;
+  font-size: 14px;
+  font-weight: 350;
+  color: hsl(243, 100%, 93%);
+}
+
+.progress-bar {
+  height: 22px;
+  width: 83%;
+  border-radius: 10px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.w3-green {
+  height: 12px;
+  width: 75%;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(355, 100%, 65%)
+  );
+}
+
+.data-availability {
+  width: 83%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(245, 12%, 83%);
+}
+
+.data-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  text-align: center;
+  width: 9%;
+  height: 7vh;
+  position: absolute;
+  bottom: 102%;
+  left: 69%;
+  font-size: 12px;
+  font-weight: 400;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.data-card h2 {
+  margin-right: 16px;
+  font-size: 25px;
+  width: 25%;
+}
+
+.triangle {
+  width: 0;
+  position: absolute;
+  left: 75.4%;
+  bottom: 97%;
+  right: 0px;
+  z-index: 2px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid white;
+  border-bottom: 20px solid transparent;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    background-image: url('../assets/bg-mobile.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .icon-card {
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    width: 70%;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .icons {
+    width: 60%;
+    display: flex;
+  }
+
+  .progress-card {
+    display: flex;
+    position: absolute;
+    bottom: 60%;
+    left: 10%;
+    width: 70%;
+  }
+
+  .progress-card h3 {
+    font-size: 13px;
+  }
+
+  .data-availability {
+    font-size: 13px;
+  }
+
+  .data-card {
+    bottom: 50%;
+    left: 30%;
+    width: 34%;
+    border-radius: 5px;
+  }
+
+  .triangle {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width:500px) and (max-width:770px){
+  .container {
+    background-image: url('../assets/bg-mobile.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .icon-card {
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    width: 70%;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .icons {
+    width: 40%;
+    display: flex;
+  }
+
+  .progress-card {
+    display: flex;
+    position: absolute;
+    bottom: 60%;
+    left: 10%;
+    width: 70%;
+  }
+
+  .progress-card h3 {
+    font-size: 13px;
+  }
+
+  .data-availability {
+    font-size: 13px;
+  }
+
+  .data-card {
+    bottom: 50%;
+    left: 30%;
+    width: 34%;
+    border-radius: 5px;
+  }
+
+  .triangle {
+    display: none;
+  }
+}
